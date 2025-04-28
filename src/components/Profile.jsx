@@ -11,7 +11,7 @@ function Profile() {
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 				<div className="order-2 lg:order-1">
 					<h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-						Hi, I'm <span className="text-blue-600 dark:text-blue-400">John Doe</span>
+						Hi, I'm <span className="text-blue-600 dark:text-blue-400">Donthireddy Lokesh Reddy</span>
 					</h1>
 					<h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-6">Full Stack Developer</h2>
 					<p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
