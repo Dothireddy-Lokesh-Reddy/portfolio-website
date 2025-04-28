@@ -1,5 +1,5 @@
 import './App.css'
-import Contact from "./components/Contact.jsx"
+// import Contact from "./components/Contact.jsx"
 function App() {
 
   return (
@@ -7,7 +7,7 @@ function App() {
       <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1>
-      <Contact />
+      {/* <Contact /> */}
     </>
   )
 }

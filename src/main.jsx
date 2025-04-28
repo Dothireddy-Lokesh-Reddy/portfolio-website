@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout.jsx'
 import Profile from './components/Profile.jsx'
 import InterviewProblems from './components/InterviewProblems.jsx'
-import Contact from './components/Contact.jsx'
+// import Contact from './components/Contact.jsx'
 import { ThemeProvider } from './context/ThemeContext.jsx'
 import Projects from './components/Projects.jsx'
 const router = createBrowserRouter([
@@ -21,10 +21,11 @@ const router = createBrowserRouter([
       {
         path: "/problems",
         element: <InterviewProblems />
-      }, {
-        path: "/contact",
-        element: <Contact />
       },
+      // {
+      //   path: "/contact",
+      //   element: <Contact />
+      // },
       {
         path: "/projects",
         element: <Projects />
