@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { Github, ExternalLink, X } from "lucide-react"
 
