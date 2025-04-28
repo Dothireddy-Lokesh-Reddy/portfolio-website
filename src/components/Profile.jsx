@@ -1,6 +1,6 @@
 import { Code, Briefcase, Heart, Moon, Sun } from "lucide-react";
 import { useState, useEffect } from "react";
-
+import { Typewriter } from "react-simple-typewriter";
 function Profile() {
 	const skills = ["JavaScript", "React.js", "Node.js", "HTML/CSS", "Tailwind CSS", "Git", "RESTful APIs", "MongoDB"];
 
@@ -13,7 +13,17 @@ function Profile() {
 					<h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
 						Hi, I'm <span className="text-blue-600 dark:text-blue-400">Donthireddy Lokesh Reddy</span>
 					</h1>
-					<h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-6">Full Stack Developer</h2>
+					<h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
+						<Typewriter
+							words={["Frontend Developer", "React Enthusiast", "Backend Explorer"]}
+							loop={true}
+							cursor
+							cursorStyle="|"
+							typeSpeed={70}
+							deleteSpeed={50}
+							delaySpeed={2000}
+						/>
+					</h2>
 					<p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
 						I'm passionate about creating elegant, efficient, and user-friendly web applications. With a strong
 						foundation in both front-end and back-end technologies, I enjoy tackling complex problems and turning ideas
