@@ -80,14 +80,17 @@ function Projects() {
 				{projects.map((project) => (
 					<div
 						key={project.id}
-						className="bg-white dark:bg-gray-800 rounded-xl shadow-[1px_1px_5px_rgba(0,0,0,0.3)] overflow-hidden hover:shadow-lg transition-shadow duration-300"
+						className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
 					>
 						<div className="h-48 overflow-hidden">
-							<img
-								src={project.image || "/placeholder.svg"}
-								alt={project.title}
-								className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-							/>
+							<a href={project.demo} target="_black">
+
+								<img
+									src={project.image || "/placeholder.svg"}
+									alt={project.title}
+									className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+								/>
+							</a>
 						</div>
 						<div className="p-4">
 							<h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">{project.title}</h3>
