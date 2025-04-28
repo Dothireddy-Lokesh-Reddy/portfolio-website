@@ -6,9 +6,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout.jsx'
 import Profile from './components/Profile.jsx'
 import InterviewProblems from './components/InterviewProblems.jsx'
-import Contact from './components/contact.jsx'
+import Contact from './components/Contact.jsx'
 import { ThemeProvider } from './context/ThemeContext.jsx'
-import Projects from './components/projects.jsx'
+import Projects from './components/Projects.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
