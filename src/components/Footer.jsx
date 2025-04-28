@@ -13,7 +13,7 @@ function Footer() {
 							Portfolio
 						</Link>
 						<p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-							&copy; {currentYear} John Doe. All rights reserved.
+							&copy; {currentYear} lokesh reddy. All rights reserved.
 						</p>
 					</div>
 

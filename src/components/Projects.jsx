@@ -7,40 +7,42 @@ function Projects() {
 	const projects = [
 		{
 			id: 1,
-			title: "E-commerce Platform",
+			title: "Calculator App",
 			description:
-				"A full-stack e-commerce platform with product listings, cart functionality, user authentication, and payment processing.",
-			image: "/placeholder.svg?height=400&width=600",
-			technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
-			github: "https://github.com/yourusername/ecommerce-platform",
-			demo: "https://ecommerce-demo.yourdomain.com",
+				"A sleek and functional calculator app built with React, featuring basic arithmetic operations, clear and backspace functionality, and responsive design.",
+			image: "/calc.png?height=400&width=600", // <-- Replace after uploading screenshot
+			technologies: ["React", "TailwindCSS"],
+			github: "https://github.com/Dothireddy-Lokesh-Reddy/CalculatorApp",
+			demo: "https://calculator-app-sepia-one.vercel.app/",
 			details:
-				"This project was built to provide a complete online shopping experience. It features a responsive design, product search and filtering, user reviews, and secure checkout with Stripe integration. The backend uses Express.js with MongoDB for data storage and includes a comprehensive admin dashboard for inventory management.",
-		},
+				"This project is a modern calculator application that supports addition, subtraction, multiplication, division, and decimal operations. It features a clean, responsive UI with TailwindCSS and React state management. Users can easily clear inputs, delete the last entry, and perform calculations with a simple and interactive layout."
+		}
+		,
 		{
 			id: 2,
-			title: "Task Management App",
+			title: "Todo App",
 			description:
-				"A Kanban-style task management application with drag-and-drop functionality, task assignments, and deadline tracking.",
-			image: "/placeholder.svg?height=400&width=600",
-			technologies: ["React", "Redux", "Firebase", "Tailwind CSS", "React DnD"],
-			github: "https://github.com/yourusername/task-manager",
-			demo: "https://task-app.yourdomain.com",
+				"A modern and responsive Todo application built with React, featuring local storage persistence, task management, dark/light theme support, and animated UI elements.",
+			image: "/todoapp.png?height=400&width=600",
+			technologies: ["React", "TailwindCSS", "Lucide-React", "LocalStorage"],
+			github: "https://github.com/Dothireddy-Lokesh-Reddy/todoapplication",
+			demo: "https://todoapplication-seven.vercel.app/",
 			details:
-				"This task management app helps teams organize their work efficiently. Users can create boards, add tasks with descriptions and deadlines, assign team members, and track progress. The app uses React DnD for the drag-and-drop interface and Firebase for real-time updates and authentication. The UI is built with Tailwind CSS for a clean, responsive design.",
+				"This project allows users to manage daily tasks with an intuitive and clean UI. Features include adding, completing, and deleting tasks, as well as automatic saving via LocalStorage. Built with React functional components, hooks like useState and useEffect, and TailwindCSS for styling."
 		},
 		{
 			id: 3,
-			title: "Weather Dashboard",
+			title: "Weather Application",
 			description:
-				"A weather application that provides current conditions and forecasts for any location, with interactive maps and charts.",
-			image: "/placeholder.svg?height=400&width=600",
-			technologies: ["React", "Chart.js", "OpenWeather API", "Mapbox", "Tailwind CSS"],
-			github: "https://github.com/yourusername/weather-dashboard",
-			demo: "https://weather.yourdomain.com",
+				"A simple and responsive weather app built with React that allows users to search for any city and view real-time weather information using the OpenWeather API.",
+			image: "weatherapp.png?height=400&width=600", // <- Upload your app screenshot and replace this path
+			technologies: ["React", "TailwindCSS", "OpenWeather API"],
+			github: "https://github.com/Dothireddy-Lokesh-Reddy/weather-app",
+			demo: "https://weather-app-gray-rho-31.vercel.app/",
 			details:
-				"This weather dashboard provides detailed weather information for any location worldwide. It features a clean, intuitive interface with current conditions, hourly and 7-day forecasts, and interactive charts for temperature, precipitation, and wind. The app uses the OpenWeather API for data and Mapbox for location visualization. Users can save favorite locations and toggle between metric and imperial units.",
-		},
+				"This application enables users to search for any city worldwide and displays live weather information including temperature, humidity, wind speed, and condition icons. It utilizes the OpenWeatherMap API for fetching weather data. The app features a stylish UI with a gradient background, loading and error handling states, and responsive design optimized for mobile and desktop."
+		}
+		,
 		{
 			id: 4,
 			title: "Recipe Finder",
@@ -66,7 +68,7 @@ function Projects() {
 	}
 
 	return (
-		<section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 border-t dark:border-gray-800 transition-colors duration-300 min-h-screen">
+		<section className="py-8 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 border-t dark:border-gray-800 transition-colors duration-300 min-h-screen">
 			<div className="text-center mb-12">
 				<h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Projects</h2>
 				<p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -78,7 +80,7 @@ function Projects() {
 				{projects.map((project) => (
 					<div
 						key={project.id}
-						className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+						className="bg-white dark:bg-gray-800 rounded-xl shadow-[1px_1px_5px_rgba(0,0,0,0.3)] overflow-hidden hover:shadow-lg transition-shadow duration-300"
 					>
 						<div className="h-48 overflow-hidden">
 							<img
@@ -87,7 +89,7 @@ function Projects() {
 								className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
 							/>
 						</div>
-						<div className="p-6">
+						<div className="p-4">
 							<h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">{project.title}</h3>
 							<p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
 

@@ -61,9 +61,9 @@ function Profile() {
 				</div>
 
 				<div className="order-1 lg:order-2 flex justify-center">
-					<div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+					<div className="relative w-80 h-full sm:w-96 sm:h-full rounded-full overflow-hidden  dark:border-gray-800 shadow-[1px_1px_5px_rgba(0,0,0,0.3)]  border-[10px] border-gray-300 ">
 						<img
-							src="/placeholder.svg?height=320&width=320"
+							src="lokesh-image-edited.jpg?height=320&width=320"
 							alt="Profile"
 							className="w-full h-full object-cover"
 						/>

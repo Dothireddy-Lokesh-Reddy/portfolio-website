@@ -9,6 +9,7 @@ import InterviewProblems from './components/InterviewProblems.jsx'
 import Contact from './components/Contact.jsx'
 import { ThemeProvider } from './context/ThemeContext.jsx'
 import Projects from './components/Projects.jsx'
+import Certificates from './components/Certificatest.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,7 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects />
-      }
+      }, {
+        path: "/certificates",
+        element: <Certificates />
+      },
     ]
   }
 ])

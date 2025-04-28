@@ -16,6 +16,7 @@ function Navbar() {
 		{ name: "Interview Problems", path: "/problems" },
 		{ name: "Projects", path: "/projects" },
 		{ name: "Contact", path: "/contact" },
+		{ name: "Certificates", path: "/certificates" },
 	]
 	return (
 		<nav className="bg-white dark:bg-gray-900 shadow-md">
