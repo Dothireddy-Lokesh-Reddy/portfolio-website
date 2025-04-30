@@ -8,7 +8,13 @@ function Profile() {
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 				<div className="order-2 lg:order-1">
 					<h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-						Hi, I'm <span className="text-blue-600 dark:text-blue-400">Donthireddy Lokesh Reddy</span>
+						Hi, I'm <span className="text-blue-600 dark:text-blue-400">
+							<Typewriter
+								words={["Donthireddy Lokesh Reddy"]}
+								cursorStyle="|"
+								typeSpeed={150}
+							/>
+						</span>
 					</h1>
 					<h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
 						<Typewriter
@@ -20,6 +26,8 @@ function Profile() {
 							deleteSpeed={50}
 							delaySpeed={2000}
 						/>
+						<br />
+
 					</h2>
 					<p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
 						I'm passionate about creating elegant, efficient, and user-friendly web applications. With a strong
@@ -50,8 +58,7 @@ function Profile() {
 							Experience
 						</h3>
 						<p className="text-gray-600 dark:text-gray-400">
-							5+ years of experience in web development, working with startups and established companies to deliver
-							high-quality software solutions.
+							Entry-level full stack developer with a strong foundation in web development, passionate about building scalable and user-friendly applications. Eager to contribute to impactful projects and grow in a collaborative environment.
 						</p>
 					</div>
 
@@ -61,8 +68,7 @@ function Profile() {
 							Passions
 						</h3>
 						<p className="text-gray-600 dark:text-gray-400">
-							I'm passionate about open source, teaching coding to beginners, and building tools that make developers'
-							lives easier. When I'm not coding, you can find me hiking or reading science fiction.
+							I'm passionate about open source, teaching coding to beginners, and building tools that make developers' lives easier. When I'm not coding, you can find me listening to music.
 						</p>
 					</div>
 				</div>

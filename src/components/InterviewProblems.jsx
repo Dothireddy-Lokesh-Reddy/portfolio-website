@@ -11,24 +11,25 @@ function InterviewProblems() {
 	const problems = [
 		{
 			id: 1,
-			title: "Two Sum",
-			difficulty: "Easy",
-			category: "Arrays & Hashing",
+			title: "Grid Lights",
+			difficulty: "Medium",
+			category: "React & State Management",
 			description:
-				"Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+				"You are tasked with simulating a grid of lights that can be toggled on or off. The grid starts with all lights off. Clicking a light toggles its state and the state of its adjacent lights (up, down, left, right).",
 			approach:
-				"Used a hash map to store previously seen values and their indices. For each number, check if target - current number exists in the hash map.",
-			link: "https://github.com/yourusername/coding-problems/two-sum",
+				"Implemented a functional React component using `useState` to manage a 2D array representing the grid. Toggling logic updates the clicked light and its valid neighbors based on their positions. Grid is rendered as a matrix of divs with color-coded states for 'on' and 'off'.",
+			link: "https://grid-lights-psi.vercel.app/"
 		},
 		{
 			id: 2,
-			title: "Valid Parentheses",
-			difficulty: "Easy",
-			category: "Stack",
+			title: "Color Disappear",
+			difficulty: "Medium",
+			category: "React & UI Interaction",
 			description:
-				"Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.",
-			approach: "Used a stack to keep track of opening brackets and ensure they are closed in the correct order.",
-			link: "https://github.com/yourusername/coding-problems/valid-parentheses",
+				"Click boxes to color them. Once all boxes are colored, the colors disappear in the exact order they were selected. During this disappearing animation, users can continue to click and color boxes again, even as the previously selected ones fade.",
+			approach:
+				"Used React state to manage the color status and order of selection. Tracked the sequence of colored boxes and triggered a timed disappearing effect once all were filled. Allowed additional user interaction during the disappearance phase without interrupting the current animation.",
+			link: "https://dothireddy-lokesh-reddy.github.io/color-disappear/"
 		},
 		{
 			id: 3,
@@ -77,7 +78,7 @@ function InterviewProblems() {
 	}
 
 	return (
-		<section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 border-t dark:border-gray-800 transition-colors duration-300 min-h-screen">
+		<section className="py-8 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 border-t dark:border-gray-800 transition-colors duration-300 min-h-screen">
 			<div className="text-center mb-12">
 				<h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Interview Problems</h2>
 				<p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -90,7 +91,7 @@ function InterviewProblems() {
 				{problems.map((problem) => (
 					<div
 						key={problem.id}
-						className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300"
+						className="bg-white dark:bg-gray-800 shadow-md overflow-hidden transition-all duration-300 rounded-xl"
 					>
 						<div
 							className="p-6 cursor-pointer flex justify-between items-center"
