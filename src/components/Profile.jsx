@@ -1,10 +1,7 @@
-import { Code, Briefcase, Heart, Moon, Sun } from "lucide-react";
-import { useState, useEffect } from "react";
+import { Code, Briefcase, Heart } from "lucide-react";
 import { Typewriter } from "react-simple-typewriter";
 function Profile() {
-	const skills = ["JavaScript", "React.js", "Node.js", "HTML/CSS", "Tailwind CSS", "Git", "RESTful APIs", "MongoDB"];
-
-
+	const skills = ["JavaScript", "React.js", "Node.js", "HTML/CSS", "Tailwind CSS", "Git", "RESTful APIs", "MongoDB", "Python"];
 
 	return (
 		<section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 border-t dark:border-gray-800 transition-colors duration-300 min-h-screen">

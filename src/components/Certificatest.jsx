@@ -26,7 +26,13 @@ const certificates = [
 		issuer: "CCBP Academy",
 		certificateUrl: "https://certificates.ccbp.in/academy/node-js?id=DFHZZSZHFM",
 	},
+	{
+		title: "Problem Solving (Basic)",
+		issuer: "HackerRank",
+		certificateUrl: "https://www.hackerrank.com/certificates/ae8c2cbb9afc",
+	},
 ];
+
 
 
 const Certificates = () => {
